@@ -47,7 +47,7 @@
     var v = $('#view'); v.innerHTML = '';
     var head = h('div', { class: 'page-head' }, h('div', {}, h('h1', {}, title), sub ? h('p', { class: 'sub' }, sub) : null));
     v.appendChild(head); var body = h('div', { class: 'page-body' }); v.appendChild(body);
-    v.appendChild(h('footer', { class: 'foot' }, h('p', {}, DISCLAIMER), h('p', { class: 'muted' }, 'Ai Investor ' + window.AII_VERSION + ' · build ' + window.AII_BUILD + ' · your data stays on this device · ', h('a', { href: '#/about' }, 'How it works'))));
+    v.appendChild(h('footer', { class: 'foot' }, h('p', {}, DISCLAIMER), h('p', { class: 'muted' }, 'Ai Investor ' + window.AII_VERSION + ' · build ' + window.AII_BUILD + ' · your data stays on this device · ', h('a', { href: '#/about' }, 'How it works'), window.Capacitor ? null : [' · ', h('a', { href: 'download/ai-investor-v4.20.apk', class: 'apk-link' }, 'Android APK')])));
     return { body: body, head: head };
   }
   function card(title, kids, extra) { return h('section', Object.assign({ class: 'card' }, extra || {}), title ? h('h2', {}, title) : null, kids); }
