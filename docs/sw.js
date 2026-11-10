@@ -1,6 +1,6 @@
 /* Ai Investor v4.20 service worker. CACHE changes every build (scripts/bump-version.sh). Market data and AI calls always go to the network. */
-var CACHE = 'ai-investor-2026-11-10.1838';
-var V = '?v=2026-11-10.1838';
+var CACHE = 'ai-investor-2026-11-10.1846';
+var V = '?v=2026-11-10.1846';
 var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'css/app.css' + V].concat(['config', 'store', 'ai', 'ui', 'engine', 'samples', 'data', 'agents', 'bizzy', 'app'].map(function (f) { return 'js/' + f + '.js' + V; }));
 self.addEventListener('install', function (e) { e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); })); });
 self.addEventListener('activate', function (e) {

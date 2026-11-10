@@ -532,9 +532,9 @@
   function boot() {
     themeNow(); shell();
     window.addEventListener('hashchange', function () { navCount++; route(); });
-    document.addEventListener('backbutton', goBack);
     var CapApp = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App;
-    if (CapApp && CapApp.addListener) CapApp.addListener('backButton', function () {
+    if (!(CapApp && CapApp.addListener)) document.addEventListener('backbutton', goBack);
+    else CapApp.addListener('backButton', function () {
       var bp = document.querySelector('.bizzy-panel.open'); if (bp) { bp.classList.remove('open'); return; }
       if (document.querySelector('.modal')) return;
       if (routeName === 'home') CapApp.exitApp(); else goBack();

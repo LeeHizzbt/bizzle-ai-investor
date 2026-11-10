@@ -1,6 +1,6 @@
 {
  "base": "http://localhost:8766/",
- "when": "2026-11-10T18:19:45.321130-05:00",
+ "when": "2026-11-10T18:52:59.724461-05:00",
  "realAI": true,
  "results": [
   [
@@ -29,9 +29,9 @@
    "\u2713 Finnhub OK: SPY $749.92 |  | \u2713 Massive OK: SPY 501 daily bars through 2026-11-10"
   ],
   [
-   "PASS",
+   "FAIL",
    "Advanced AI Settings: Test AI key (real Gemini)",
-   "\u2713 gemini / gemini-3.5-flash-lite replied: OK"
+   "TimeoutError('Page.wait_for_selector: Timeout 90000ms exceeded.\\nCall log:\\n  - waiting for locator(\"#aiTestOut p, #aiTestOut .error\") to be visible\\n')"
   ],
   [
    "PASS",
@@ -71,12 +71,12 @@
   [
    "PASS",
    "Journal written by real AI from the record",
-   "2026-11-10 \u00b7 gemini-3.5-flash-lite \u29c9 Copy  During the 2026-11-10 session, I checked the 10 watched tickers (SPY, QQQ, IW"
+   "2026-11-10 \u00b7 gemini-3.5-flash-lite \u29c9 Copy  Session 2026-11-10 (paper).  During this session, I checked 10 watched ticker"
   ],
   [
    "PASS",
    "Grounded agent chat (real AI) with grounding check + copy button",
-   "gemini-3.5-flash-lite \u29c9 Copy  My current paper account value is $96,310.01, and I have made 7 total trades (5 buys and 2 sells, with 2 closed trades), such as trade T1.  Paper trading only.  \u2713 Groundi"
+   "gemini-3.5-flash-lite \u29c9 Copy  My current paper account value is $96,310.01. I have made 7 total trades (5 buys and 2 sells), such as trade T1.  Paper trading only. To make any changes, please edit you"
   ],
   [
    "PASS",
@@ -121,7 +121,7 @@
   [
    "PASS",
    "AI themes: presets + AI-generated theme",
-   "preset ember applied, badge stays neon; AI theme #C87533"
+   "preset ember applied, badge stays neon; AI theme #C46210"
   ],
   [
    "PASS",
@@ -169,6 +169,6 @@
    ""
   ]
  ],
- "passed": 33,
- "failed": 0
+ "passed": 32,
+ "failed": 1
 }
