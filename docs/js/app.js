@@ -533,6 +533,12 @@
     themeNow(); shell();
     window.addEventListener('hashchange', function () { navCount++; route(); });
     document.addEventListener('backbutton', goBack);
+    var CapApp = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App;
+    if (CapApp && CapApp.addListener) CapApp.addListener('backButton', function () {
+      var bp = document.querySelector('.bizzy-panel.open'); if (bp) { bp.classList.remove('open'); return; }
+      if (document.querySelector('.modal')) return;
+      if (routeName === 'home') CapApp.exitApp(); else goBack();
+    });
     Promise.all([Secure.load(), Agents.load()]).then(function () { return Agents.loadCached(); }).then(function () {
       route(); Bizzy.init(); return gate();
     }).then(function () { if (Secure.has('data.massive') && Agents.list.length) refreshAll(false); })
