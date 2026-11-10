@@ -1,0 +1,7 @@
+name = "ai-investor-proxy"
+main = "proxy.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Contact for the SEC User-Agent header (an email you own). Not a secret.
+CONTACT = "set-your-email@example.com"

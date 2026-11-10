@@ -1,0 +1,7 @@
+{
+  "appId": "com.nunyabizz.aiinvestor",
+  "appName": "Ai Investor",
+  "webDir": "docs",
+  "android": { "allowMixedContent": false },
+  "server": { "androidScheme": "https" }
+}

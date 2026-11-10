@@ -1,0 +1,17 @@
+{
+  "name": "Ai Investor v4.20",
+  "short_name": "Ai Investor",
+  "description": "Plain-English strategy → AI-drafted rules you approve → deterministic paper agent on real US stock prices. Paper trading only. Not financial advice.",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050806",
+  "theme_color": "#050806",
+  "orientation": "any",
+  "categories": ["finance", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

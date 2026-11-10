@@ -1,0 +1,174 @@
+{
+ "base": "http://localhost:8766/",
+ "when": "2026-11-10T18:19:45.321130-05:00",
+ "realAI": true,
+ "results": [
+  [
+   "PASS",
+   "First-run gate: not financial advice, no real money",
+   "gate shown and accepted"
+  ],
+  [
+   "PASS",
+   "Branding: neon green v4.20 badge, Bizzy bubble, themed back button",
+   "rgb(57, 255, 20)"
+  ],
+  [
+   "PASS",
+   "No keys \u2192 clear \"Unavailable/add key\" states, no invented numbers",
+   "clear empty states with no numbers: standings, ticker, test run, macro"
+  ],
+  [
+   "PASS",
+   "Settings: keys saved encrypted (no plaintext in storage)",
+   "AES-GCM ciphertext only; device key non-extractable; survives reload"
+  ],
+  [
+   "PASS",
+   "Settings: Test data keys (Finnhub quote + Massive bars)",
+   "\u2713 Finnhub OK: SPY $749.92 |  | \u2713 Massive OK: SPY 501 daily bars through 2026-11-10"
+  ],
+  [
+   "PASS",
+   "Advanced AI Settings: Test AI key (real Gemini)",
+   "\u2713 gemini / gemini-3.5-flash-lite replied: OK"
+  ],
+  [
+   "PASS",
+   "Wizard: idea + screenshot \u2192 real AI rules \u2192 approve \u2192 test run \u2192 launch",
+   "universe SPY,QQQ; screenshot attached; approved; test run; launched"
+  ],
+  [
+   "PASS",
+   "Example strategy \u2192 approve \u2192 launch paper agent ($100k default)",
+   "starts after 2026-10-20 with $100,000"
+  ],
+  [
+   "PASS",
+   "Rule validation blocks approval of invalid rules",
+   "invalid ticker blocked approval"
+  ],
+  [
+   "PASS",
+   "Forward paper catch-up: decide after close, fill next real open, reasons on every trade",
+   "Note Duo: 2 trades, 15 sessions, $99,531.13; Trend Rider (example): 7 trades, 15 sessions, $96,310.01 \u2014 every fill = real next open \u00b1 5 bps"
+  ],
+  [
+   "PASS",
+   "Agent: overview/portfolio/activity/strategy/journal/chat/test tabs; trade reasons; hash-chain integrity",
+   "\u2713 9 record events verified (hash chain intact)"
+  ],
+  [
+   "PASS",
+   "Strategy edit creates a new version; append-only record detects tampering",
+   "v2 approved, old trades keep v1; tamper detected by hash chain"
+  ],
+  [
+   "PASS",
+   "Journal from record (no AI) + copy button",
+   "written from record; copy button works"
+  ],
+  [
+   "PASS",
+   "Journal written by real AI from the record",
+   "2026-11-10 \u00b7 gemini-3.5-flash-lite \u29c9 Copy  During the 2026-11-10 session, I checked the 10 watched tickers (SPY, QQQ, IW"
+  ],
+  [
+   "PASS",
+   "Grounded agent chat (real AI) with grounding check + copy button",
+   "gemini-3.5-flash-lite \u29c9 Copy  My current paper account value is $96,310.01, and I have made 7 total trades (5 buys and 2 sells, with 2 closed trades), such as trade T1.  Paper trading only.  \u2713 Groundi"
+  ],
+  [
+   "PASS",
+   "Portfolio tab shows cash/holdings from the record",
+   "['Cash', '$840.87', 'Invested', '$95,469.14']"
+  ],
+  [
+   "PASS",
+   "Historical test run (2y real bars) matches the engine exactly; replay works",
+   "UI $90,164.62 == engine $90,164.62 (31 trades, 2025-11-10\u21922026-11-10); replay animates"
+  ],
+  [
+   "PASS",
+   "Standings vs SPY with period chips",
+   "3 rows incl. SPY; period chips work"
+  ],
+  [
+   "PASS",
+   "Trade log: filter + CSV export",
+   "9 trades, filter + CSV export"
+  ],
+  [
+   "PASS",
+   "Watchlist: Finnhub quotes, add ticker",
+   "SPY $749.92 (real last close via Finnhub mock); added XOM"
+  ],
+  [
+   "PASS",
+   "Ticker page: real chart + indicators; graceful Finnhub plan errors",
+   "chart (line+candles, SMA, RSI), stats; Finnhub 403 shown as a clear error"
+  ],
+  [
+   "PASS",
+   "Macro: clear message without FRED key/proxy",
+   "needs FRED key + proxy message"
+  ],
+  [
+   "PASS",
+   "Bizzy pop-up: memory, screenshot upload, copy button",
+   "memory saved and recalled; screenshot upload; copy button"
+  ],
+  [
+   "PASS",
+   "AI themes: presets + AI-generated theme",
+   "preset ember applied, badge stays neon; AI theme #C87533"
+  ],
+  [
+   "PASS",
+   "Error handling: rate-limited, bad key, no key, offline",
+   "rate limit 429, bad AI key, missing key, offline \u2192 clear messages"
+  ],
+  [
+   "PASS",
+   "Pause/resume, export, fork, backup (no keys), delete",
+   "pause/resume, export rules, fork, backup without keys, delete"
+  ],
+  [
+   "PASS",
+   "Back button (themed) and Android back key",
+   "themed back + Android back key"
+  ],
+  [
+   "PASS",
+   "Responsive 360px",
+   "11 routes: no horizontal overflow, back button, disclaimer, neon badge, Bizzy"
+  ],
+  [
+   "PASS",
+   "Responsive 390px",
+   "11 routes: no horizontal overflow, back button, disclaimer, neon badge, Bizzy"
+  ],
+  [
+   "PASS",
+   "Responsive 768px",
+   "11 routes: no horizontal overflow, back button, disclaimer, neon badge, Bizzy"
+  ],
+  [
+   "PASS",
+   "Responsive 1024px",
+   "11 routes: no horizontal overflow, back button, disclaimer, neon badge, Bizzy"
+  ],
+  [
+   "PASS",
+   "Responsive 1440px",
+   "11 routes: no horizontal overflow, back button, disclaimer, neon badge, Bizzy"
+  ],
+  [
+   "PASS",
+   "No page/console errors during the run",
+   ""
+  ]
+ ],
+ "passed": 33,
+ "failed": 0
+}

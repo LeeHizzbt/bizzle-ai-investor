@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ai Investor</string>
+    <string name="title_activity_main">Ai Investor</string>
+    <string name="package_name">com.nunyabizz.aiinvestor</string>
+    <string name="custom_url_scheme">com.nunyabizz.aiinvestor</string>
+</resources>
